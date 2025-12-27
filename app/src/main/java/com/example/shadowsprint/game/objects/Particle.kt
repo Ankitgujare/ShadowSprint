@@ -5,13 +5,13 @@ import android.graphics.Color
 import android.graphics.Paint
 import kotlin.random.Random
 
-class Particle(var x: Float, var y: Float, color: Int) {
+class Particl(var x: Float, var y: Float, color: Int) {
     private val paint = Paint().apply { this.color = color }
     private val angle = Random.nextDouble(0.0, Math.PI * 2)
     private val speed = Random.nextFloat() * 10f + 2f
     private var size = Random.nextFloat() * 15f + 5f
     private var alpha = 255
-    
+    private var demo=121;
     var active = true
 
     fun update() {
